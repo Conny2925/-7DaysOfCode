@@ -1,0 +1,18 @@
+alert ("Bienvenido!!");
+
+let nombreUsuario = prompt  ("por favor indicame tu nombre") ;
+let añosUsuario = prompt ("Cuantos años tienes?");
+let lenguajeProgramacion = prompt ("que lenguaje de programacion estas estudiando?");
+let respuestaUsuario = 0;
+
+
+alert (`Hola ${nombreUsuario}, tienes ${añosUsuario} años y ya estas aprendiendo ${lenguajeProgramacion}!`);
+
+    respuestaUsuario = prompt (`te gusta estudiar el lenguaje ${lenguajeProgramacion}? Responde el numero 1 para si y 2 para no`);
+        
+        if ( respuestaUsuario ==1){
+                alert (¡Muy bien! Sigue estudiando y tendrás mucho éxito);
+        } else {
+            alert (Oh, qué pena... ¿Ya intentaste aprender otros lenguajes?);
+        }
+    
