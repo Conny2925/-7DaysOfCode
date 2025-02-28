@@ -5,9 +5,29 @@ let respuesta;
 let tecnologia;
 let respuestaEspecializacion = 0;
 let respuestaTecnologia;
-let lenguaje;
+let respuesta1;
 
 
+if (eleccionArea === "Front-End"){
+
+    respuesta = prompt ("Usted quiere aprender React o aprender Vue?");
+}  
+ else {
+
+
+if (eleccionArea === "Back-End"){
+    respuesta = alert ("Si está en el área de Back-End, podrá aprender C# o aprender Java.");
+}
+    else {
+        alert ("ingrese una respuesta correcta");
+    }
+}
+
+
+    console.log (respuesta);
+
+
+while(respuesta === "Front-End"| "Back-End");{
 
      respuestaEspecializacion = prompt ("Si desea seguir especializándose en el área elegida responsa 1 o, si elige desarrollarse para convertirse en Fullstack responder 2, por favor");
 
@@ -25,19 +45,26 @@ let lenguaje;
 
     }
 }
-
+}
 
 //    console.log(respuestaEspecializacion)
 
-while (respuestaTecnologia === "ok");{
+let listaTecnologias = [];
+let i = 0
 
-respuestaTecnologia = prompt("Le gustaria conocer otra tecnología? responda OK si es así");
+while (i <= 0) {
 
-        lenguaje = prompt("cual?");
+    respuestaTecnologia = prompt("¿Hay alguna otra tecnología que te gustaria aprender?, si no deseas otra tecnoligia responder NO");
 
-    alert (`${lenguaje} es una excelente elección`);
+   if (respuestaTecnologia == "" || respuestaTecnologia == undefined || respuestaTecnologia == null || respuestaTecnologia === "no") {
+    i++
+   } else {
+    listaTecnologias.push(respuestaTecnologia);
+    alert(`así que ${respuestaTecnologia}, es una buena opción`);
+    console.log(respuestaTecnologia);
+    console.log(listaTecnologias);
+   }
+}
 
-respuestaTecnologia = prompt("¿Hay alguna otra tecnología que te gustaría aprender? responda OK si tiene otra tecnología");
-
- }
-  // console.log(respuestaTecnologia);
+alert ("gracias por contestar estas preguntas");
+   console.log(respuestaTecnologia);
