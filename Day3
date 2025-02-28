@@ -1,0 +1,43 @@
+alert ("Bienvenido!!");
+
+const eleccionArea = prompt (" Desea seguir hacia el área de Front-End o seguir hacia el área de Back-End.");
+let respuesta;
+let tecnologia;
+let respuestaEspecializacion = 0;
+let respuestaTecnologia;
+let lenguaje;
+
+
+
+     respuestaEspecializacion = prompt ("Si desea seguir especializándose en el área elegida responsa 1 o, si elige desarrollarse para convertirse en Fullstack responder 2, por favor");
+
+    if (respuestaEspecializacion == 1) {
+
+        alert("Esperamos que avances lo mas que deses en el area elegida");
+    }
+         else {
+         
+         if(respuestaEspecializacion == 2) {
+            alert ("Esta carrera es la mejor para ti");
+         }
+          else {
+        alert ("por favor ingresa un valor valido.");
+
+    }
+}
+
+
+//    console.log(respuestaEspecializacion)
+
+while (respuestaTecnologia === "ok");{
+
+respuestaTecnologia = prompt("Le gustaria conocer otra tecnología? responda OK si es así");
+
+        lenguaje = prompt("cual?");
+
+    alert (`${lenguaje} es una excelente elección`);
+
+respuestaTecnologia = prompt("¿Hay alguna otra tecnología que te gustaría aprender? responda OK si tiene otra tecnología");
+
+ }
+  // console.log(respuestaTecnologia);
